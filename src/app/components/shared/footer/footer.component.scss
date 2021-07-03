@@ -1,0 +1,43 @@
+a {
+    text-decoration: none !important;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+ul li {
+    list-style-type: none !important;
+}
+
+
+/** Subscribe btns**/ 
+
+.fix {
+    overflow: hidden;
+}
+#mc-form > input {
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 0 15px;
+    height: 45px;
+}
+#mc-form .default-btn {
+    border: medium none;
+    color: #666666;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    height: 45px;
+    line-height: 34px;
+    padding: 0 35px;
+    font-weight: 600;
+   
+    border-radius: 0;
+    text-transform: capitalize;
+}
+.default-btn span {
+    z-index: 2;
+    position: relative;
+}
+/** Subscribe btns **/

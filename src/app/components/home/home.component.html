@@ -1,0 +1,280 @@
+<!-- Start  Ng bootstrap -->
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/1.png" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/1.png" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/1.png" alt="Random third slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+<!-- End  Ng bootstrap -->
+
+<!--======== Start Ngx bootstrap =============-->
+<!-- <carousel [itemsPerSlide]="itemsPerSlide"
+          [singleSlideOffset]="singleSlideOffset"
+          [noWrap]="!noWrap"
+          [startFromIndex]="5"
+          (slideRangeChange)="onSlideRangeChange($event)"
+         >
+  <slide *ngFor="let slide of slides; let index=index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+      <h4>Slide {{index}}</h4>
+    </div>
+  </slide>
+</carousel> -->
+ 
+
+
+
+
+  <!-- <carousel [itemsPerSlide]="itemsPerSlide">
+    <slide *ngFor="let slide of slider">
+      <img [src]="slide" alt="first slide" style="display: block; width: 100%;">
+    </slide>
+    
+  </carousel> -->
+  <!--End Ngx bootstrap -->
+
+  <div class="py-30">
+    <div class="container">
+        <div class="row">
+              <a aria-label="contactss" href="http://localhost/osoule/public/contact" *ngFor="let ad of ads">
+                <img class="img-fluid" [src]="ad.image" [alt]="ad.align" ></a>
+                    </div>
+    </div>
+</div>
+
+
+
+<!-- ngx tab with ngx multiple slider -->
+
+  <div>
+
+    <tabset>
+      <tab heading="Basic title" id="tab1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+
+              <!-- <carousel [itemsPerSlide]="itemsPerSlide"
+                  [singleSlideOffset]="false"
+                  [indicatorsByChunk]="true">
+          <slide *ngFor="let project of projects; let i=index" class="mx-auto">
+            <img [src]="project.files[0]" alt="image slide" style="display: block; width: 100%;">
+            <div class="carousel-caption">
+              <h4>{{project.name}}</h4>
+            </div>
+          </slide>
+        </carousel> -->
+
+            </div>
+          </div>
+        </div>
+
+    </tab>
+
+
+
+      <tab heading="Basic Title 1">Basic content 1</tab>
+      <tab heading="Basic Title 2">Basic content 2</tab>
+    </tabset>
+
+
+
+  </div>
+  <!-- ngx tab with ngx multiple slider -->
+
+
+
+
+
+
+
+
+
+
+
+  <section class="bg-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 " style="visibility: visible; animation-name: slideInUp;">
+                                <!-- mb-30 -->
+
+                    <div class="main-title w-70 ml-auto d-table text-center mb-10">
+                        <h2 class="title mb-20 color-secondary">Daily News 
+                          <span class="flag-icon flag-icon-gb  flag-icon-3"></span>
+                        </h2>
+                        
+                    </div>
+                    <a class="main-title w-70  text-right mb-10">
+                        <h3 [routerLink]="'/viewall'" class="title mb-20 color-secondary">view all</h3>
+                    </a>
+                  
+                    
+                </div>
+
+    
+ 
+ <div class="col-md-12 col-lg-4 " *ngFor="let propertie of properties ">
+        <div class="post-thumbnail hover-secondery-primary mt-30 shadow rounded" >
+            <div class="post-img overflow-hidden" style="height: 230px; width:100%">
+                <a href="https://osoule.com/financial-market-experts-expectations-to-close-todays-session-will-continue-the-positive-performance-of-stock-indices">
+                    <img [src]="propertie.files[0]" alt="Financial market experts: Expectations to close today's session will continue the positive performance of stock indices" style="height: 230px;">
+                </a>
+               
+            </div>
+
+            <div class="post-content mt-20 color-secondary color-secondary-a bg-gray">
+                <div class="post-date w-25 float-left bg-gray mr-20 text-center">
+                    <div class="py-10"><span class="d-block bg-primary">10</span>June</div>
+                    
+                </div>
+                <div class="text-area d-table news_content">
+                    <a class="post-title mb-15" href="https://osoule.com/financial-market-experts-expectations-to-close-todays-session-will-continue-the-positive-performance-of-stock-indices">
+                        <!-- height:46px; -->
+                        <h3 style="line-height:23px;height:48px;text-overflow:ellipsis;overflow:hidden">
+                            {{propertie.name}}
+                        </h3>
+                    </a>
+                    <p style="line-height:23px;height:69px;text-overflow:ellipsis;overflow:hidden">
+                      {{propertie.description}}
+                    </p>
+                    <a aria-label="readmore1" class="btn-more m-15" style="text-align: end" href="https://osoule.com/financial-market-experts-expectations-to-close-todays-session-will-continue-the-positive-performance-of-stock-indices">
+                    <!-- Read More -->
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Start News Section Page -->
+    <section class="blog section-padding" data-scroll-index="5">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-md-12 col-lg-12 " style="visibility: visible; animation-name: slideInUp;">
+                              <!-- mb-30 -->
+
+                  <div class="main-title w-70 ml-auto d-table text-center mb-10">
+                      <h2 class="title mb-20 color-secondary"> News</h2>
+                      
+                  </div>
+               
+                
+                  
+              </div>
+
+  <!-- Start News page card -->
+  <div class="col-lg-4" *ngFor="let new of news; let i=index">
+    <div class="item mb-md50">
+        <div class="post-img">
+            <div class="img">
+                <img [src]="new.files[i]" alt="">
+            </div>
+        </div>
+        <div class="cont">
+            <div class="info">
+
+                <a href="#0">By : {{new.author.first_name}}</a>
+                <a href="#0">{{new.updated_at}}</a>
+                <a href="#0" class="tag">{{new.status}}</a>
+            </div>
+            <h6><a href="#0">{{new.name}}</a></h6>
+            <p>{{new.description}}</p>
+            <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <!-- End News page card -->
+
+
+          </div>
+      </div>
+  </section>
+      <!-- END News Section Page -->
+
+
+    <!-- Start News Section Page -->
+    <section class="blog section-padding" data-scroll-index="5">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-md-12 col-lg-12 " style="visibility: visible; animation-name: slideInUp;">
+                              <!-- mb-30 -->
+
+                  <div class="main-title w-70 ml-auto d-table text-center mb-10">
+                      <h2 class="title mb-20 color-secondary"> Blogs</h2>
+                      
+                  </div>
+               
+                
+                  
+              </div>
+
+  <!-- Start Blogs page card -->
+  <div class="col-lg-4" *ngFor="let blog of blogs">
+    <a class="card-icon-right"> </a>
+
+    <div class="item mb-md50">
+        <div class="post-img">
+            <!-- <div class="img">
+                <img src="img/blog/1.jpg" alt="">
+            </div> -->
+        </div>
+        <div class="cont">
+            <div class="info" >
+                <a href="#0">By : {{blog.author.first_name}}</a>
+                <a href="#0">{{blog.updated_at}}</a>
+                <a href="#0" class="tag">{{blog.status}}</a>
+            </div>
+            <h6><a href="#0">{{blog.name}}</a></h6>
+            <p>{{blog.description}}</p>
+            <a href="#0" class="more">Read More <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <!-- End News page card -->
+
+
+          </div>
+      </div>
+  </section>
+      <!-- END blogs Section Page -->
+
+
+  

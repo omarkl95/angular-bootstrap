@@ -1,0 +1,129 @@
+.picsum-img-wrapper img{
+    width: 100% !important;
+}
+.post-img img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+ul li {
+    list-style-type: none !important;
+}
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+/* Start news page cards*/ 
+.blog .item {
+    -webkit-box-shadow: 0px 15px 40px rgb(0 0 0 / 5%);
+    box-shadow: 0px 15px 40px rgb(0 0 0 / 5%);
+    padding: 15px;
+}
+.blog .item .post-img {
+    overflow: hidden;
+}
+.blog .item .post-img .img {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.blog .item .cont {
+    padding: 30px 0 15px;
+}
+.blog .item .info {
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.blog  .item .info a {
+    margin-right: 10px;
+}
+// %pseudo-block {
+//     content: "";
+//     border-left: 3px solid #f50;
+//   }
+//   .blog .item .info  {
+//     &:before {
+//         @extend %pseudo-block;
+//         margin-left: 5px;
+
+//     }
+//   }
+.card-icon-right {
+    border-left: 2px solid #f50;
+    height: 31px;
+    position: relative;
+    top: 25%;
+
+}
+
+
+span, a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.blog .item .info a:last-child {
+    margin-right: 0;
+}
+
+.blog .item .info .tag {
+    padding: 4px;
+    background-color: #1A237E;
+    color: #fff;
+    float: right;
+    line-height: 1;
+}
+.blog .item .cont h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.blog .item .cont h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 500;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.8;
+    margin: 0;
+}
+.blog .item .more {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: 2px solid #f50;
+    border-radius: 7px;
+    padding: 13px;
+}
+.blog .item .more i {
+    font-size: 10px;
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+    opacity: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+
+/* End news page cards*/ 
+
+ 

@@ -1,0 +1,18 @@
+a:hover, a:focus, a.active, .btn-primary:focus {
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+ul li {
+    list-style-type: none !important;
+}
